@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Work Sans-Local';
+    src: url(../font/work-sans.ttf);
+}
+@font-face {
+    font-family: 'Source Code Pro-Local';
+    src: url(../font/source-code-pro.ttf);
+}
+/* #AIM-FOR-DEBUGGING,
+* {
+    outline: 1px solid #000000;
+    background: rgba(255, 0, 0, 0.1) fixed;
+} */
+html body {
+    --dark: #212529;
+    --light: #f8f9fa;
+    font-family: 'Work Sans-Local', sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.header-100vh {
+    height: calc(90vh - 86px) !important;
+}
+.mt-86px {
+    margin-top: 86px !important;
+}
