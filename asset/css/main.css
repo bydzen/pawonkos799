@@ -19,20 +19,32 @@ html body {
 body::-webkit-scrollbar {
     display: none;
 }
+#scrollTop {
+    opacity: 0;
+    right: 25px;
+    bottom: 20px;
+    z-index: 99;
+    position: fixed;
+    padding: 5px 10px;
+    transition: 500ms all;
+    background: white;
+    border: 1px solid #212529;
+    outline: 2px solid white;
+}
 .header-100vh {
     height: 100vh !important;
     padding-top: 73px !important;
 }
 .hero-title {
     color: #ff5100;
-    text-shadow: 2px 2px 0 #212529;
+    text-shadow: -1px 1px 1px #f8f9fa, 1px 1px 1px #f8f9fa, 1px -1px 1px #f8f9fa, -1px -1px 1px #f8f9fa;
 }
 .background-home {
     height: 100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0.7)), url(/asset/image/hero.jpg);
+    background-image: linear-gradient(rgba(100, 100, 100, 0.3), rgba(100, 100, 100, 0.3)), url(/asset/image/hero.jpg);
 }
 .card-image {
     background-size: cover;
@@ -42,5 +54,5 @@ body::-webkit-scrollbar {
 }
 .color-testimonial {
     color: #ff5100;
-    text-shadow: 1.5px 1.5px 0 #212529;
+    text-shadow: -1px 1px 1px #f8f9fa, 1px 1px 1px #f8f9fa, 1px -1px 1px #f8f9fa, -1px -1px 1px #f8f9fa;
 }
